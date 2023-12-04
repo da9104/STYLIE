@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylie | The selective unique styling for you. </title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/93d605acff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="lines">
+        <div class="line-first"></div>
+        <div class="line-second"></div>
+        <div class="line-third"></div>
+    </div>
+    
+    <nav class="navbar">
+        <div class="logo">Stylie</div>
+
+            <div class="categories">
+                <ul>
+                    <li><a href="#">men</a></li>
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">accesories</a></li>
+                    <li><a href="#">beauty</a></li>
+                </ul>
+            </div>
+
+            <div class="menu">
+                <i class="fa fa-bars"></i>
+                
+            </div>
+            <div class="shop">
+                <i class="fa fa-search"></i>
+                <!-- fa fa-shopping-bag -->
+            </div>
+    </nav>
+    <div class="img">
+        <img src="./assets/marissa-grootes-R_vW8Uq4pY0-unsplash.jpg" alt="hero image">
+    </div>
+
+    <div class="title">
+        <span><label>black</label>label&nbsp;</span>
+    </div>
+
+    <div class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+    <div class="number">SS/24</div>
+
+    <div class="scroll-down">scroll</div>
+
+    <div class="media">
+        <ul>
+            <li><i class="fa fa-facebook"></i></li>
+            <li><i class="fa fa-instagram"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <span>SHOP</span>
+    </footer>
+
+
+    <button>Discover+</button>
+
+
+    <script>
+        TweenMax.to('.line-first', 2, {
+            opacity: 1,
+            delay: 0.5,
+            height: '100vh',
+            // y: '-100%',
+            ease: Expo.easeInOut
+        })
+        TweenMax.to('.line-second', 2, {
+            opacity: 1,
+            delay: 0.4,
+            height: '100%',
+            // y: '-100%',
+            ease: Expo.easeInOut
+        })
+        TweenMax.to('.line-third', 2, {
+            opacity: 1,
+            delay: 0.8,
+            height: '100%',
+            // y: '100%',
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.navbar', 2, {
+            delay: 0.6,
+            opacity: 0,
+            y: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.number', 1.4, {
+            delay: 1.3,
+            opacity: 0,
+            x: 20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.button', 2, {
+            delay: 4.3,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.scroll-down', 2, {
+            delay: 2,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.footer', 2, {
+            delay: 2,
+            opacity: 0,
+            // right: '20px',
+            ease: Expo.easeInOut
+        })
+        TweenMax.staggerFrom('.media ul li', 1.3, {
+            delay: 1.3,
+            opacity: 0,
+            y: -20,
+            ease: Power3.easeInOut
+        }, 0.9)
+
+    </script>
+
+
+</body>
+</html>
